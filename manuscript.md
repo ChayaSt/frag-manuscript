@@ -9,8 +9,8 @@ author-meta:
 - John D Chodera
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-20'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta name=\"citation_title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta property=\"og:title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta property=\"twitter:title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta name=\"dc.date\" content=\"2020-04-20\" />\n<meta name=\"citation_publication_date\" content=\"2020-04-20\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Chaya D Stern\" />\n<meta name=\"citation_author_institution\" content=\"Tri-Insitutional PhD Program in Chemical Biology, Memorial Sloan Kettering Cancer Center, New York, New York 10065, USA\" />\n<meta name=\"citation_author_institution\" content=\"Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, New York 10065 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6200-3993\" />\n<meta name=\"twitter:creator\" content=\"@SternChaya\" />\n<meta name=\"citation_author\" content=\"Christopher I Bayly\" />\n<meta name=\"citation_author_institution\" content=\"OpenEye Scientific Software\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9145-6457\" />\n<meta name=\"citation_author\" content=\"Daniel G A Smith\" />\n<meta name=\"citation_author_institution\" content=\"The Molecular Sciences Software Institute, Blacksburg, Virginia 24060 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8626-0900\" />\n<meta name=\"twitter:creator\" content=\"@dga_smith\" />\n<meta name=\"citation_author\" content=\"Josh Fass\" />\n<meta name=\"citation_author_institution\" content=\"Tri-Insitutional PhD Program in Chemical Biology, Memorial Sloan Kettering Cancer Center, New York, New York 10065, USA\" />\n<meta name=\"citation_author_institution\" content=\"Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, New York 10065 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3719-266X\" />\n<meta name=\"twitter:creator\" content=\"@maxentile\" />\n<meta name=\"citation_author\" content=\"Lee-Ping Wang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Chemistry, University of California, Davis, Califnornia 95616 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3072-9946\" />\n<meta name=\"citation_author\" content=\"David L Mobley\" />\n<meta name=\"citation_author_institution\" content=\"Departments of Pharmaceutical Sciences and Chemistry, University of California, Irvine, California 92697\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1083-5533\" />\n<meta name=\"twitter:creator\" content=\"@davidmobley\" />\n<meta name=\"citation_author\" content=\"John D Chodera\" />\n<meta name=\"citation_author_institution\" content=\"Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, New York 10065 USA\" />\n<meta name=\"citation_author_institution\" content=\"BIH Einstein Visiting Professor, Charit\xE9 Universit\xE4tsmedizin, Berlin\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0542-119X\" />\n<meta name=\"twitter:creator\" content=\"@jchodera\" />\n<link rel=\"canonical\" href=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta property=\"og:url\" content=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://ChayaSt.github.io/frag-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://ChayaSt.github.io/frag-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://ChayaSt.github.io/frag-manuscript/v/b8eea85b98a81ede06946c8023e199c89ee20d08/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://ChayaSt.github.io/frag-manuscript/v/b8eea85b98a81ede06946c8023e199c89ee20d08/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://ChayaSt.github.io/frag-manuscript/v/b8eea85b98a81ede06946c8023e199c89ee20d08/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-06-07'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta name=\"citation_title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta property=\"og:title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta property=\"twitter:title\" content=\"Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans\" />\n<meta name=\"dc.date\" content=\"2020-06-07\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-07\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Chaya D Stern\" />\n<meta name=\"citation_author_institution\" content=\"Tri-Insitutional PhD Program in Chemical Biology, Memorial Sloan Kettering Cancer Center, New York, New York 10065, USA\" />\n<meta name=\"citation_author_institution\" content=\"Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, New York 10065 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6200-3993\" />\n<meta name=\"twitter:creator\" content=\"@SternChaya\" />\n<meta name=\"citation_author\" content=\"Christopher I Bayly\" />\n<meta name=\"citation_author_institution\" content=\"OpenEye Scientific Software\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9145-6457\" />\n<meta name=\"citation_author\" content=\"Daniel G A Smith\" />\n<meta name=\"citation_author_institution\" content=\"The Molecular Sciences Software Institute, Blacksburg, Virginia 24060 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8626-0900\" />\n<meta name=\"twitter:creator\" content=\"@dga_smith\" />\n<meta name=\"citation_author\" content=\"Josh Fass\" />\n<meta name=\"citation_author_institution\" content=\"Tri-Insitutional PhD Program in Chemical Biology, Memorial Sloan Kettering Cancer Center, New York, New York 10065, USA\" />\n<meta name=\"citation_author_institution\" content=\"Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, New York 10065 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3719-266X\" />\n<meta name=\"twitter:creator\" content=\"@maxentile\" />\n<meta name=\"citation_author\" content=\"Lee-Ping Wang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Chemistry, University of California, Davis, Califnornia 95616 USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3072-9946\" />\n<meta name=\"citation_author\" content=\"David L Mobley\" />\n<meta name=\"citation_author_institution\" content=\"Departments of Pharmaceutical Sciences and Chemistry, University of California, Irvine, California 92697\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1083-5533\" />\n<meta name=\"twitter:creator\" content=\"@davidmobley\" />\n<meta name=\"citation_author\" content=\"John D Chodera\" />\n<meta name=\"citation_author_institution\" content=\"Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, New York 10065 USA\" />\n<meta name=\"citation_author_institution\" content=\"BIH Einstein Visiting Professor, Charit\xE9 Universit\xE4tsmedizin, Berlin\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0542-119X\" />\n<meta name=\"twitter:creator\" content=\"@jchodera\" />\n<link rel=\"canonical\" href=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta property=\"og:url\" content=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://ChayaSt.github.io/frag-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://ChayaSt.github.io/frag-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://ChayaSt.github.io/frag-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - forcefield
 - force-field
@@ -30,10 +30,10 @@ title: Capturing non-local through-bond effects when fragmenting molecules for q
 
 <small><em>
 This manuscript
-([permalink](https://ChayaSt.github.io/frag-manuscript/v/b8eea85b98a81ede06946c8023e199c89ee20d08/))
+([permalink](https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/))
 was automatically generated
-from [ChayaSt/frag-manuscript@b8eea85](https://github.com/ChayaSt/frag-manuscript/tree/b8eea85b98a81ede06946c8023e199c89ee20d08)
-on April 20, 2020.
+from [ChayaSt/frag-manuscript@0b44f5f](https://github.com/ChayaSt/frag-manuscript/tree/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8)
+on June 7, 2020.
 </em></small>
 
 ## Authors
@@ -149,7 +149,7 @@ In many molecular mechanics force fields (such as Amber [@doi:10.1021/ja00124a00
 $$ E_{tor} = \sum_{n=1}^{N} \frac{V_n}{2}[1 + cos[n(\theta - \gamma)]]$$
 
 Here, $V_n$ is the torsion force constant which determines the amplitudes, $n$ is the multiplicity which determines the number of minima, and $\gamma$ is the phase angle which is sometimes set to $0^{\circ}$ or $180^{\circ}$ to enforce symmetry around zero.
-In most force fields, the maximum periodicity included is $N = 4$, though some force fields feature up to $N = 7$.
+In most force fields, the maximum periodicity included is $N = 4$, though some force fields feature up to $N = 6$.
 Torsional potential parameters, such as the amplitudes $V_n$ and phase angle $\gamma$, are generally fit to the residual difference between a quantum chemistry (QC) torsion energy profile (in gas phase or implicit solvent) and the non-torsion MM parameters [@doi:10.1007/s00894-008-0305-0].
 The QC torsion energy profile is generated by fixing the torsion angle and geometry minimizing all other atomic positions.
 
@@ -174,7 +174,7 @@ Formally, $M\leq 4$ for hybrid DFT, although modern implementations of hybrid DF
 Using QCArchive data [@url:https://qcarchive.molssi.org/], we found that empirically, hybrid DFT grows like $~N^{2.6}$ for the DZVP basis [@doi:10.1139/v92-079] as shown for gradient evaluations in Figure @fig:b3lyp_scaling, A.
 To achieve good sampling of the torsion profiles for adequate potential fits, constrained geometry optimizations need to be calculated at $\leq 15^0$ intervals, for a minimum of 24 constrained geometry optimizations for a 1D torsion profile [^1].
 To avoid hysteresis in the energy profile due to orthogonal degrees of freedom [@doi:10.1021/acs.jpcb.7b02320],
-methods like wavefront propagation `[hold for CITE torsiondrive paper]`{.red} are used.
+methods like wavefront propagation [@doi:10.26434/chemrxiv.12044673.v1] are used.
 This adds a factor of $2 * D$, where $D$ is the dimension, or the number of coupled torsions explored, of the QC torsion scan, to the number of required optimizations and, therefore, the computational cost.
 We found (SI Figure @fig:opts_per_td) that on average, ~60 QC optimizations are needed for a 1D wavefront-propagated torsion
 drive to converge, with ~20 gradient evaluations required per optimization (SI Figure @fig:grads_per_opt).
@@ -188,7 +188,7 @@ Reducing the size of the molecule to be used in QC torsion drive computations to
 
 2. **Intramolecular interactions complicate torsion drives and torsion parameter fitting**
 In larger molecules, there is a greater potential for the torsion atoms to have through-space interaction (e.g. hydrogen bonding) with other degrees of freedom, which convolutes the energy profile.
-While this can also happen in smaller molecules such as ethylene glycol `[hold to CITE torsiondrive paper]`{.red},
+While this can also happen in smaller molecules such as ethylene glycol [@doi:10.26434/chemrxiv.12044673.v1].
 this problem is reduced when a minimal model molecule containing the model chemistry around the torsion is used, albeit not completely eliminated.
 
 
@@ -207,7 +207,7 @@ When fragmenting molecules for QC torsion scans, fragments need to include all a
 We also need a systematic way to determine if remote substituents significantly alter the barrier to rotation around the central torsion bond.
 
 
-In this work, we use the Wiberg Bond Order (WBO) [@doi:10/fvwkkh], which is both simple to calculate from semi-empirical QC methods and is sensitive to the chemical environment around a bond.
+In this work, we use the Wiberg Bond Order (WBO) [@doi:10/fvwkkh], which is both simple to calculate from semi-empirical QC methods and is sensitive to the chemical environment around a bond `[Hold to cite WBO paper]`{.red}.
 WBOs quantify electron population overlap between bonds, or the degree of binding between atoms.
 Bond orders are correlated with bond vibrational frequencies [@doi:10.1021/jp4010345; @doi:10.1351/pac198961040635] and WBOs are used to predict trigger bonds in high energy-density material because they are correlated with the strength of bonds [@doi:10.1002/cphc.201500773], a property which also directly affects the torsional potential.
 Wei et al. [@doi:10.1021/acs.jcim.9b00585] have shown that simple rules for electron richness of aromatic systems in biaryls are good indication of torsion force constants (specifically for V~2~); however, this measure was only developed for biaryls and it does not take into account substituents beyond the aromatic ring directly adjacent to the bond.
@@ -278,9 +278,39 @@ In this study, for simplicity, we use the term conjugation to refer to all modes
 
 ## 3. Results
 
-### 3.1 Torsion energy barriers are sensitive to the chemical environment which can be influenced by remote substituents
+### 3.1 Fragmenting molecules for quantum chemical torsion scans can alter the chemical environment of the torsion.
 
-[Biphenyl example with florine substituent?]`{.yellow}`
+![**Torsion profiles can be sensitive to small local and remote chemical changes.**
+[**A**] QC torsion scans of the central bond in biphenyls in different protonation states. The colors of the QC torsion scans
+correspond to the highlighted central bond of the biphenyls. The Wiberg bond order is shown in the box next to the central bond.
+[**B**] Same as **A** but with fluorine on the ortho position.
+[**C**] Same as **A** but with Chlorine on the ortho position](images/figure-2.svg){#fig:biphenyls}
+
+Small chemical changes to molecules, both local and remote, can drastically alter their electronic property.
+This poses a challenge to force field parametrization, specifically torsion parameters which rely on computationally expensive QC torsion scans for reference data.
+Given how poorly QC torsion scans scale with molecular size, molecules are fragmented to smaller entities to generate the reference data.
+The assumption is that torsion scans generated for susbstructures can be used as reference data for other molecules that share the substructure.
+However, seemingly similar torsion types in different chemical environments can have very different torsion potential.
+This is particularly apparent in conjugated systems where small, remote changes can exert strong electron-donating or -withdrawing effects thus altering torsional barrier heights as we have shown [cite wbo paper].
+When such remote changes are combined with other more local changes which induce both electronic effects and steric clashes, remote effects can be either amplified or counteracted.
+We illustrate such changes in an example as shown in Figure @fig:biphenyls.
+Figure @fig:biphenyls A shows a series of biphenyls in different protonation states.
+The central bond in the biphenyls are part of a larger conjugated system.
+However, the extent of conjugation changes with small, remote chemical changes.
+This is reflected both in the increased barrier heights of the torsion scans and increased Wiberg bond order of the bond.
+As the extent of conjugation increases, the Wiberg bond order, or electronic population overlap increases, and resistance to rotation increases as reflected in increasing torsion barrier heights.
+For @fig:biphenyls A, the remote change exerts a very strong effect on the central bond.
+This effect decreases with small local chemical changes that induce steric effects as shown in @fig:biphenyls B and C.
+When halogens, which are larger than hydrogens, are placed in the ortho position, the local steric effect increases the energy of the planar conformation needed for conjugation which counteracts the remote effects.
+Thus, while the energy barrier and WBOs increase for the cation, anion and zwitterion, the changes are less drastic for larger substituents at the ortho position.
+Figure @fig:biphenyls C shows the series of torsion scans for chloro-pyridyl-phenol.
+While the torsion barrier heights increase as the WBO increase, the increase is less drastic as the flouro-pyridyl-phenol series (Figure @fig:biphenyls B) because chlorine is larger than fluorine.
+
+The trends shown in this example illustrate why fragmenting molecules appropriately for QC torsion scans currently still requires human expertise and is difficult to automate.
+In these cases, small remote changes gradually perturbed the conjugation of the central bond.
+In addition, these changes were different for similar molecules with different local environments.
+When fragmenting molecules, we aim to avoid destroying a bond's chemical environment by naively removing an important remote substituent.
+
 
 ### 3.2 A simple fragmentation scheme can use the WBO to preserve the chemical environment around a torsion
 
@@ -293,7 +323,7 @@ The absolute difference of its WBO relative to the parent (0.99 in the minimal f
 The fragment continues to grow until the central bond's WBO is within the disruption threshold of the WBO of the bond in the parent molecule.
 The green circle illustrates the better, larger fragment that has a WBO on its central bond closer to the WBO on the same bond in the parent molecules](images/fragmentation_scheme.svg){#fig:frag_scheme}
 
-The WBO is a robust indicator of changes in torsion energy barrier heights for related torsions.
+The WBO is a robust indicator of changes in torsion energy barrier heights for related torsions `[cite wbo paper]`.{red}
 Therefore, if a fragment's WBO deviates too much from its parent WBO at the same bond, the fragmentation is probably inadequate.
 Using this concept, we extended the fragment-and-cap scheme (with slight changes) proposed by [@doi:10.1021/acs.jcim.9b00373] by considering resonance via WBOs.
 The scheme, illustrated in Figure @fig:frag_scheme is as follows:
@@ -310,7 +340,8 @@ fragment's WBO is within the threshold of the parent WBO.
 
 | Chemical group | SMARTS pattern |
 |---|---|
-| azo |`[NX3][N]=` |
+| hydrazine | `[NX3][NX3]` |
+| hydrazone | `[NX3][NX2]` |
 | nitric oxide | `[N]-[O]` |
 | amide |  `[#7][#6](=[#8])`, `[#7][#6](-[O-])`|
 | urea | `[NX3][CX3](=[OX1])[NX3]` |
