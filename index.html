@@ -11,7 +11,7 @@
   <meta name="author" content="Lee-Ping Wang" />
   <meta name="author" content="David L Mobley" />
   <meta name="author" content="John D Chodera" />
-  <meta name="dcterms.date" content="2020-06-07" />
+  <meta name="dcterms.date" content="2020-06-22" />
   <meta name="keywords" content="forcefield, force-field, cheminformatics" />
   <title>Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans</title>
   <style>
@@ -34,8 +34,8 @@
   <meta name="citation_title" content="Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans" />
   <meta property="og:title" content="Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans" />
   <meta property="twitter:title" content="Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans" />
-  <meta name="dc.date" content="2020-06-07" />
-  <meta name="citation_publication_date" content="2020-06-07" />
+  <meta name="dc.date" content="2020-06-22" />
+  <meta name="citation_publication_date" content="2020-06-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://ChayaSt.github.io/frag-manuscript/" />
   <meta name="citation_pdf_url" content="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/" />
-  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/b6e43fe61d9a6141d6c37a9c43e48fb40ba0ed61/" />
+  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/b6e43fe61d9a6141d6c37a9c43e48fb40ba0ed61/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/b6e43fe61d9a6141d6c37a9c43e48fb40ba0ed61/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -100,10 +100,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://ChayaSt.github.io/frag-manuscript/v/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8/">permalink</a>)
+(<a href="https://ChayaSt.github.io/frag-manuscript/v/b6e43fe61d9a6141d6c37a9c43e48fb40ba0ed61/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ChayaSt/frag-manuscript/tree/0b44f5ff7d17967ef37971e29b861c4ab2ec51b8">ChayaSt/frag-manuscript@0b44f5f</a>
-on June 7, 2020.
+from <a href="https://github.com/ChayaSt/frag-manuscript/tree/b6e43fe61d9a6141d6c37a9c43e48fb40ba0ed61">ChayaSt/frag-manuscript@b6e43fe</a>
+on June 22, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -212,7 +212,7 @@ To account for this, 2D spline fits, such as the CMAP potential <span class="cit
 <strong>[A]</strong> CPU time (wall clock time * nthreads) of one QC gradient evaluation at B3LYP-D3(BJ)/DZVP level of theory <span class="citation" data-cites="YPDz9hB3 17YEERBX3">[<a href="#ref-YPDz9hB3" role="doc-biblioref">14</a>,<a href="#ref-17YEERBX3" role="doc-biblioref">15</a>]</span> vs number of heavy atoms in molecules.
 All computations shown here were run on an Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz.
 Empirically, gradient evaluations grow as <span class="math inline">\(O(N^{2.6})\)</span> where <span class="math inline">\(N\)</span> is the number of heavy atoms.
-The scaling is similar on other processors shown in SI Figures <a href="#fig:intel_scaling">11</a> &amp; <a href="#fig:amd_scaling">12</a>.
+The scaling is similar on other processors shown in SI Figures <a href="#fig:intel_scaling">12</a> &amp; <a href="#fig:amd_scaling">13</a>.
 The black curves shows a power law fit to the data, while the grey curve depicts the 95% CI of the curve estimate.
 <strong>[B]</strong> Smoothed histogram of heavy atoms in small molecules from DrugBank.
 The average small molecule in DrugBank has 25 heavy atoms as shown with the grey line.</figcaption>
@@ -229,8 +229,8 @@ To achieve good sampling of the torsion profiles for adequate potential fits, co
 To avoid hysteresis in the energy profile due to orthogonal degrees of freedom <span class="citation" data-cites="1E3wArY0j">[<a href="#ref-1E3wArY0j" role="doc-biblioref">18</a>]</span>,
 methods like wavefront propagation <span class="citation" data-cites="Kad6jO9v">[<a href="#ref-Kad6jO9v" role="doc-biblioref">19</a>]</span> are used.
 This adds a factor of <span class="math inline">\(2 * D\)</span>, where <span class="math inline">\(D\)</span> is the dimension, or the number of coupled torsions explored, of the QC torsion scan, to the number of required optimizations and, therefore, the computational cost.
-We found (SI Figure <a href="#fig:opts_per_td">14</a>) that on average, ~60 QC optimizations are needed for a 1D wavefront-propagated torsion
-drive to converge, with ~20 gradient evaluations required per optimization (SI Figure <a href="#fig:grads_per_opt">13</a>).
+We found (SI Figure <a href="#fig:opts_per_td">15</a>) that on average, ~60 QC optimizations are needed for a 1D wavefront-propagated torsion
+drive to converge, with ~20 gradient evaluations required per optimization (SI Figure <a href="#fig:grads_per_opt">14</a>).
 Figure <a href="#fig:b3lyp_scaling">1</a>, B shows a smoothed histogram of the distribution of the number of heavy atoms in FDA approved small molecules taken from DrugBank <span class="citation" data-cites="1FI8iuYiQ">[<a href="#ref-1FI8iuYiQ" role="doc-biblioref">20</a>]</span>.
 For an average druglike molecule of 25 heavy atoms (Figure <a href="#fig:b3lyp_scaling">1</a>, B), we can estimate the cost of a 1D torsion scan to be <span class="math inline">\(60 * 20 * 0.26 * 25^{2.6} \approx 1,000,000\)</span> CPU seconds.
 Reducing the size of the molecule to be used in QC torsion drive computations to 15 heavy atoms would reduce the cost the torsion scan by an order of magnitude (<span class="math inline">\(60 * 20 * 0.26 * 15^{2.6} \approx 300,000\)</span> CPU seconds)</li>
@@ -557,11 +557,11 @@ Fragments used to get the maximum distances include all 1-5 atoms around the hig
 Molecules 10-12 also show
 the atoms the bonds are sensitive to.
 The atoms are circled with the same color as the bond that is sensitive to it.
-The rest of the molecules used in the validation set are shown in SI Figure <a href="#fig:full_validation_set">15</a></figcaption>
+The rest of the molecules used in the validation set are shown in SI Figure <a href="#fig:full_validation_set">16</a></figcaption>
 </figure>
 </div>
 <p>Selected molecules with bonds highlighted according to their sensitivity are shown in Figure <a href="#fig:validation_set">6</a>.
-The rest of the molecules are shown in SI Figure <a href="#fig:full_validation_set">15</a>.
+The rest of the molecules are shown in SI Figure <a href="#fig:full_validation_set">16</a>.
 This set included many molecules in charged states.
 The sensitivity score of the bonds are given by taking the MMD of the
 fragment where the WBO distribution of that bond has the greatest distance relative to the WBO distribution of the bond in the parent molecule.
@@ -577,13 +577,13 @@ In molecule 12, both the amide and ester bond are sensitive to the same negative
 <div id="fig:joint_plots" class="fignos">
 <figure>
 <img src="images/cost-vs-accuracy.svg" alt="" /><figcaption><span>Figure 7:</span> <strong>Different WBO disruption thresholds result in different accuracy vs cost trade-offs.</strong>
-Computational cost vs distance score of the fragments for the bonds in the benchmark set shown in Figure <a href="#fig:full_validation_set">15</a>.
+Computational cost vs distance score of the fragments for the bonds in the benchmark set shown in Figure <a href="#fig:full_validation_set">16</a>.
 Computational cost is proportional to NHeavy<sup>2.6</sup> as estimated in Figure <a href="#fig:b3lyp_scaling">1</a>, A.
 The threshold is the maximum amount of change allowed in the ELF10 WBO relative to the parent molecules’s ELF10 WBO during fragmentation.</figcaption>
 </figure>
 </div>
 <p>We aim to identify parameters for our fragmentation scheme that maximize the number of fragments that end up in that lower left corner of the Pareto front (illustrated in Figure <a href="#fig:dabrafenib_wbo_dists">5</a>, B).
-To do that, we generated fragments for the red bonds in the 100 molecules shown in Figure <a href="#fig:full_validation_set">15</a> set using different disruption thresholds.
+To do that, we generated fragments for the red bonds in the 100 molecules shown in Figure <a href="#fig:full_validation_set">16</a> set using different disruption thresholds.
 For every fragment, we found the distance score of their fragments’ WBO distribution and their computational cost.
 We then plotted all fragments from the validation set for different thresholds {figure <a href="#fig:joint_plots">7</a>.
 When the threshold is low, the fragmentation scheme will generate fragments which have very good distance scores, but many of them will be too big for computational efficient QC torsion scan.
@@ -644,7 +644,7 @@ This scheme performs better than other schemes such as the scheme Pfizer used in
 <div id="fig:difference_hist" class="fignos">
 <figure>
 <img src="images/combined-score-differences.svg" alt="" /><figcaption><span>Figure 8:</span> <strong>Using the WBO as an indicator of chemical environment disruption improves performance of fragmentation algorithm.</strong>
-Distribution of differences in distance scores for fragments in the validation set (SI Figure <a href="#fig:full_validation_set">15</a>) generated using
+Distribution of differences in distance scores for fragments in the validation set (SI Figure <a href="#fig:full_validation_set">16</a>) generated using
 Pfizer’s rules and our scheme using 0.03 as the disruption threshold.
 For many bonds, both approaches yield equally performing fragments (shown in green).
 In some cases, Pfizer’s rules performs better than our scheme (shown in red); however, the differences are usually very small.
@@ -654,12 +654,13 @@ In most cases, using the WBO as an indicator improves the distance score (shown 
 <p>In the benchmark experiment (Figure <a href="#fig:joint_plots">7</a>), the distance scores measured the distance between WBO distributions generated from Omega generated conformers of the parents and fragments.
 Omega aims to generate low energy conformers <span class="citation" data-cites="1G1ccz54w">[<a href="#ref-1G1ccz54w" role="doc-biblioref">45</a>]</span> and in some cases, fragments only have one or two low energy conformers so it is not clear how accurate the distances measured are.
 In addition, only comparing low energy conformers do not fully capture torsion energy barriers which we also want to ensure remain accurate relative to their parent’s torsion energy scan.</p>
-<p>To mitigate the these issues when validating our scheme, we also added WBOs calculated from conformers generated on a grid of torsion angles about the bonds which included higher energy conformers that are closer to conformers generated in canonical torsion scans. Furthermore, since we know that WBOs from structures in a QC torsion scan are anti correlated with the QC torsion energy scan (Figure ??), adding these WBOs to the distributions provided a better validation of our method than examining only the distance between omega-generated WBO distributions.
+<p>To mitigate the these issues when validating our scheme, we also added WBOs calculated from conformers generated on a grid of torsion angles about the bonds which included higher energy conformers that are closer to conformers generated in canonical torsion scans.
+Furthermore, since we know that WBOs from structures in a QC torsion scan are anti correlated with the QC torsion energy scan <code class="red">[Hold to cite WBO paper]</code>, adding these WBOs to the distributions provided a better validation of our method than examining only the distance between omega-generated WBO distributions.
 The differences in distances of these distributions from fragments generated with our scheme and <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">30</a>]</span> is shown in Figure <a href="#fig:difference_hist">8</a>.</p>
 <p>For many molecules, using a common sense rule based approach, such as the one used in <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">30</a>]</span> to fragmenting molecules, will yield fragments that are the same fragments generated with our scheme shown in green in Figure <a href="#fig:difference_hist">8</a>, and sometimes can even perform slightly better than using the WBO as an indicator (Figure <a href="#fig:difference_hist">8</a>, red).
 However, in many cases, especially if certain chemical groups are involved, using the WBO as an indicator significantly improves the electron population overlap about the bonds and brings them closer to their parent’s chemical environment (Figure <a href="#fig:difference_hist">8</a>, blue).
-It is important to note that when the fragment generated from both scheme are the same (green in Figure <a href="#fig:difference_hist">8</a>), they are not necessarily the optimal fragment and both schemes can perform equally poorly (SI Figure <a href="#fig:equal-fragments">16</a>, A, B, and C).
-However, in most cases both fragments do perform well (SI Figure <a href="#fig:equal-fragments">16</a>, D, E, and F).</p>
+It is important to note that when the fragment generated from both scheme are the same (green in Figure <a href="#fig:difference_hist">8</a>), they are not necessarily the optimal fragment and both schemes can perform equally poorly (SI Figure <a href="#fig:equal-fragments">17</a>, A, B, and C).
+However, in most cases both fragments do perform well (SI Figure <a href="#fig:equal-fragments">17</a>, D, E, and F).</p>
 <div id="fig:chemical_groups" class="fignos">
 <figure>
 <img src="images/figure_12.svg" alt="" /><figcaption><span>Figure 9:</span> <strong>Some chemical groups induce non local effects that are captured in fragments when using the WBO as an indicator of chemical environments.</strong>
@@ -678,12 +679,12 @@ Figure <a href="#fig:chemical_groups">9</a>.
 These chemical groups with representative examples are shown in Figure <a href="#fig:chemical_groups">9</a>.
 The groups are ordered by how strongly they induce long range effect, in decreasing order. The most dramatic change happens when a phosphate group is removed (Figure <a href="#fig:chemical_groups">9</a>, A).
 The variance of the WBO distribution increases which conveys an increase in relative energies of conformers in the QC torsion scans.
-In other molecules where phosphates are removed, the variance can decrease even if the phosphate group is ten bonds away (Figure <a href="#fig:failure_modes">10</a>, F and SI Figure <a href="#fig:si-phosphate">17</a> E).</p>
+In other molecules where phosphates are removed, the variance can decrease even if the phosphate group is ten bonds away (Figure <a href="#fig:failure_modes">10</a>, F and SI Figure <a href="#fig:si-phosphate">18</a> E).</p>
 <p>In Figure <a href="#fig:chemical_groups">9</a>, B, removing a protonated nitrogen that is double bonded causes the WBO distribution to shift and the variance to increase.
-Long range effects are seen in other molecules with similar chemical patterns up to eight bonds away (SI Figure <a href="#fig:si-nitrogen">18</a>, E).
-Removing a nitrile group (Figure <a href="#fig:chemical_groups">9</a>, C) and sulfonamide group (Figure <a href="#fig:chemical_groups">9</a>, D) have similar effects on the WBO distributions which is also consistent with other molecules that contain these groups up to three bonds away (SI Figures <a href="#fig:si-nitrile">19</a> and <a href="#fig:si-sulfonamide">20</a>).
-A protonated nitrogen and deprotonated oxygen (Figure <a href="#fig:chemical_groups">9</a> E and F) can effects bonds between 3-6 bonds away (SI Figures <a href="#fig:si-nitrogen">18</a> and <a href="#fig:si-oxygen">21</a>).
-While the changes in distributions for removing a nitro group and sulfur (Figure <a href="#fig:chemical_groups">9</a>, G and H) are not as big as other chemical groups, they are mostly consistent across other molecules in the validation set (SI Figures <a href="#fig:si-nitro">22</a> and <a href="#fig:si-sulfur">23</a>).</p>
+Long range effects are seen in other molecules with similar chemical patterns up to eight bonds away (SI Figure <a href="#fig:si-nitrogen">19</a>, E).
+Removing a nitrile group (Figure <a href="#fig:chemical_groups">9</a>, C) and sulfonamide group (Figure <a href="#fig:chemical_groups">9</a>, D) have similar effects on the WBO distributions which is also consistent with other molecules that contain these groups up to three bonds away (SI Figures <a href="#fig:si-nitrile">20</a> and <a href="#fig:si-sulfonamide">21</a>).
+A protonated nitrogen and deprotonated oxygen (Figure <a href="#fig:chemical_groups">9</a> E and F) can effects bonds between 3-6 bonds away (SI Figures <a href="#fig:si-nitrogen">19</a> and <a href="#fig:si-oxygen">22</a>).
+While the changes in distributions for removing a nitro group and sulfur (Figure <a href="#fig:chemical_groups">9</a>, G and H) are not as big as other chemical groups, they are mostly consistent across other molecules in the validation set (SI Figures <a href="#fig:si-nitro">23</a> and <a href="#fig:si-sulfur">24</a>).</p>
 <div id="fig:failure_modes" class="fignos">
 <figure>
 <img src="images/figure-14.svg" alt="" /><figcaption><span>Figure 10:</span> <strong>Using the WBO as an indicator when fragmenting can still fail to find the optimal fragment.</strong>
@@ -713,49 +714,26 @@ Two such examples are shown in Figure <a href="#fig:failure_modes">10</a> E and 
 In E, not only is the protonated nitrogen needed (shown in green), but the alcohol group is also needed to achieve good WBO distribution overlap (shown in purple).
 In F, the phosphate group nine bonds away from the bond of interest is needed to capture the density of of the mode at 1.2 (shown in blue and purple).</p>
 <h4 id="validating-the-fragmentation-scheme">3.3.4 Validating the fragmentation scheme</h4>
-<p>Figure to add:
-Compare QC scans from some fragments generated with WBO vs Pfizer’s scheme.</p>
-<h2 id="discussion">4. Discussion</h2>
-<h3 id="combinatorial-fragmentation-benchmark-set-contains-rich-chemical-information-that-can-be-useful-for-other-applications">4.1 Combinatorial fragmentation benchmark set contains rich, chemical information that can be useful for other applications</h3>
-<p>{<code>JDC: This paragraph is a bit of a mess---can you fix?</code>}{.red}
-The validation set used to benchmark our fragmentation scheme, and determine the disruption threshold to use, was specifically selected to validate a fragmentation scheme for QC torsion scans.
-Aiming to identify molecules that are challenging to fragment, we selected a set of 100 molecules that included bonds sensitive to removal of remote functional groups.
-These molecules were selected from a larger set of 1,234 molecules and ~300,000 fragments with their WBO distributions over conformations.
-This exhaustive fragmentation dataset, with their changing WBO distributions, provides a treasure trove of nuanced chemical data.
-For the purposes of this paper, we did not delve into interesting effects we observed because it is out of scope.
-Here we describe some of those observations, and provide some thoughts on how this kind of data can be useful for other applications.</p>
-<p>At closer proximities that were not relevant for this study, and when functional groups are fragmented, the changes in the distributions detect varied effects.
-Many of these effects confirmed known considerations, such as removing a carbonyl from an amide or carboxylic group.
-But some were more subtle, such as changes observed vis-à-vis primary, secondary, and tertiary amines.
-The changes seem to pick up on subtle pKa changes for different amines <span class="citation" data-cites="1BB0uXaMq">[<a href="#ref-1BB0uXaMq" role="doc-biblioref">46</a>]</span>.
-In addition, the shifts in the distributions observed in Figure <a href="#fig:dabrafenib_wbo_dists">5</a> are also picking up on the effects of fluorine on sulfonamide. {<code>CS:should I add more figures on the kind of things I saw? SI?</code>}{.orange} {<code>JDC: Yes, if possible!</code>}{.red}</p>
-<p>This kind of data can potentially be used to complement knowledge based molecular similarity applications which are usually
-defined locally and might not detect long range effects.
-In addition, since WBO is anti-correlated with Hammett resonance parameters (Figure ??), and shifts in distributions also seem to detect pKa shifts, WBOs may be useful in improving pKa predictions.</p>
-<p>We are sharing the dataset as a benchmark set for future fragmentation schemes. {<code>JDC: Where?</code>}{.red}
-It is also straightforward to generate such data for molecules that are not in the set by following the directions given in the Detailed Methods. {<code>JDC: Which part?</code>}{.red}</p>
-<h3 id="using-bond-orders-when-fragmenting-molecules-captures-long-range-effects-that-simple-rules-do-not">4.4 Using Bond orders when fragmenting molecules captures long-range effects that simple rules do not</h3>
-<p>Relative changes in bond orders between the fragments and their parent molecules, are a good indication of changes to the electron density around a central bond.
-QC torsion scans capture both steric and conjugation effects so torsion force field parameters should capture both short range non bonded corrections and conjugation. However, simple fragmentation rules assumes that including 1-5 atoms around the central bond (including rings and functional groups) is enough to capture conjugation effects in addition to sterics.
-While this assumption holds true for many molecules, it is not sufficient for sensitive bonds and functional groups that have long range effects, as we have shown.
-Therefore, using the WBO to detect changes to a bond’s chemical environment, which is sensitive to nonlocal effects, ameliorates some deficiencies in rule based fragmentation schemes. But there is a trade off and the solution is not always optimal. While WBO calculations are cheap relative to QC torsion scans, they still require several semi-empirical QM calculations, the ELF10 estimate is sometimes not an adequate estimate, and heuristics used to add substituents to minimize electron density disruption do not always find the optimal path.</p>
-<p>One way to speed up conjugation perception, is using RDKit’s conjugation detector which relies on rules.
-However, these rules are binary; a bond is either considered fully conjugated or not.
-However, conjugation is a continuous property and the extent of conjugation determines relative barrier heights.
-Boolean values do not allow us to detect such relative changes to a bond’s chemical environment that will effect torsion barrier height. A better approach is to extend the concept of H-TEQ (hyperconjugation for torsional energy quantification) developed in
-<span class="citation" data-cites="AWj8hnbG 16GNoHAFY">[<a href="#ref-AWj8hnbG" role="doc-biblioref">36</a>,<a href="#ref-16GNoHAFY" role="doc-biblioref">47</a>]</span> to include not just the 1-4 atoms in
-bonds adjacent to conjugated systems, or aromatic rings in biaryls, but other atoms in the molecule to obtain V<sub>1</sub> and V<sub>2</sub> estimates,
-and use those values instead of WBOs to determine the disruption of electron population overlap around the bond.</p>
-<p>However, both of the above solutions, while reducing the cost of extent of conjugation detection, will still rely on needing
-to find the optimal path to grow our the fragment.
-{<code>JDC: Lots and lots of howevers here.</code>}{.red}
-A data-driven approach, which can find the optimal fragment is the ideal solution.
-The OFF QC datasets on QCArchive <span class="citation" data-cites="qXilVj0B">[<a href="#ref-qXilVj0B" role="doc-biblioref">17</a>]</span> all include Wiberg bond orders for all conformations.
-Given the
-sheer number of data available on QCArchive, and the long range information WBOs captures, it should be possible to train an ML model to find which parts of a molecule are electronically couped and need to be conserved when fragmenting to reproduce the parent molecule chemical environment.
-This data-driven approach will reduce the cost of fragmenting and also potentially find the most optimal fragment that minimizes both electronic density disruption and fragment size.
-It can also provide data needed to determine how many torsion SMIRKS types are needed for maximum transferability and chemical coverage.</p>
-<p>The Open Force Field Initiative’s effort to automate data-driven direct chemical perception <span class="citation" data-cites="1HYTTY1PU mbmV3Fg8 14f8CUfzQ">[<a href="#ref-mbmV3Fg8" role="doc-biblioref">1</a>,<a href="#ref-1HYTTY1PU" role="doc-biblioref">48</a>,<a href="#ref-14f8CUfzQ" role="doc-biblioref">49</a>]</span> addresses this problem by using SMARTS/SMIRKS patterns to assign parameters, and providing a framework to sample over SMIRKS space in a data-driven way.</p>
+<div id="fig:validate_fragmenter" class="fignos">
+<figure>
+<img src="images/valdate-fragmenter.svs" alt="" /><figcaption><span>Figure 11:</span> <strong>Using WBO as a criteria for fragmentation improves the chemical equivalency of the fragment to the substructure in the parent molecule.</strong>
+Representative QC torsion profiles of parent molecules (shown in blue), fragments generated from rule based scheme (shown in orange) and fragments generated with the WBO scheme (green).
+<strong>[A]</strong> Torsion profile about the highlighted bond in Chloroprocaine for the parent molecule (blue), WBO scheme (green) and simple rules (orange).
+<strong>[B]</strong> Same as <strong>A</strong> for Phenformin.
+<strong>[C]</strong> Same as <strong>A</strong> for Furosemide.
+<strong>[D]</strong> Same as <strong>A</strong> for Nitazoxanide. Here, the parent and fragment generated with the WBO scheme are the same.
+<strong>[E]</strong> Same as <strong>A</strong> for Cimetidine.
+<strong>[F]</strong> Same as <strong>C</strong> for Furosemide.</figcaption>
+</figure>
+</div>
+<p>To validate our fragmentation scheme, we ran several series of torsion scans on parent molecules and fragments - both fragments generated using only the rules used in <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">30</a>]</span> and fragments using our WBO based scheme.
+For all the molecules we tested, we found that the torsion scans of the fragments using the different schemes differed significantly as shown in Figure <a href="#fig:validate_fragmenter">11</a>
+To avoid high computational cost and through-space intramolecular interactions, we chose parent molecules that were less than 21 heavy atoms.
+Therefore, some of the fragments found by our WBO scheme were the parent molecules (Figures <a href="#fig:validate_fragmenter">11</a> D and F).
+For the cases where the WBO scheme generated fragments that were smaller than the parent molecules, the QC torsion scan of those fragments were closer to the QC torsion scans in the parent molecule than for the fragments generated with simple rules.
+The only exception is Figure <a href="#fig:validate_fragmenter">11</a> E where the QC scan of the fragment without the nitrile has a smaller RMSE relative to the parent QC scan as the WBO generated fragment (RMSE 6.38 vs 6.97).
+This discrepancy is a result of the asymmetry in the parent’s molecule QC torsion scan (blue scan).
+The asymmetry arises from favorable through-space interactions between the nitrile and hydrogens on the methyl on the imidazole at dihedral angles 15^{<span class="math inline">\(\circ\)</span>} - 115^{<span class="math inline">\(\circ\)</span>}.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>We have shown that the AM1 ELF10 WBO estimate is a simple, yet informative quantity about the extent of binding between two connecting atoms,
 thus descriptive of a bond’s chemical environment, its level of conjugation, and resistance to rotation. We can use
@@ -895,8 +873,8 @@ bonds with higher WBO are more likely to be involved in extended conjugation tha
 <p>Both of these heuristics will sometimes give different results <code class="red">[Hold for SI figure]</code>.
 We found that for the benchmark set we tested,
 the shortest path heuristic preformed slightly better, or found more optimal fragments when compared to using the greatest WBO heuristic (284 vs 262 in the optimal quadrant).
-Figure <a href="#fig:si-heuristics">24</a> compares the scores and sizes of fragments generated with different growth paths. The shortest path length
-heuristic generates smaller fragments (Figure <a href="#fig:si-heuristics">24</a> <strong>A</strong>)</p>
+Figure <a href="#fig:si-heuristics">25</a> compares the scores and sizes of fragments generated with different growth paths. The shortest path length
+heuristic generates smaller fragments (Figure <a href="#fig:si-heuristics">25</a> <strong>A</strong>)</p>
 <h2 id="code-and-availability">Code and availability</h2>
 <ul>
 <li><a href="https://github.com/openforcefield/fragmenter">GitHub repository</a> fragmenter code.</li>
@@ -1073,7 +1051,7 @@ DOI: <a href="https://doi.org/10.1021/jm9602928">10.1021/jm9602928</a> · PMID: 
 <p>24. <strong>pyEFP: Automatic decomposition of the complex molecular systems into rigid polarizable fragments</strong><br />
 Alexey V. Odinokov, Nikita O. Dubinets, Alexander A. Bagaturyants<br />
 <em>Journal of Computational Chemistry</em> (2018-05-15) <a href="https://doi.org/gcq4qs">https://doi.org/gcq4qs</a><br />
-DOI: <a href="https://doi.org/10.1002/jcc.25149">10.1002/jcc.25149</a></p>
+DOI: <a href="https://doi.org/10.1002/jcc.25149">10.1002/jcc.25149</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29280158">29280158</a></p>
 </div>
 <div id="ref-ll3I4A87">
 <p>25. <strong>Approximate <em>ab initio</em> energies by systematic molecular fragmentation</strong><br />
@@ -1194,61 +1172,37 @@ Paul C. D. Hawkins, A. Geoffrey Skillman, Gregory L. Warren, Benjamin A. Ellings
 <em>Journal of Chemical Information and Modeling</em> (2010-03-17) <a href="https://doi.org/d4rb6g">https://doi.org/d4rb6g</a><br />
 DOI: <a href="https://doi.org/10.1021/ci100031x">10.1021/ci100031x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20235588">20235588</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2859685">PMC2859685</a></p>
 </div>
-<div id="ref-1BB0uXaMq">
-<p>46. <strong>Predicting and Tuning Physicochemical Properties in Lead Optimization: Amine Basicities</strong><br />
-Martin Morgenthaler, Eliane Schweizer, Anja Hoffmann-Röder, Fausta Benini, Rainer E. Martin, Georg Jaeschke, Björn Wagner, Holger Fischer, Stefanie Bendels, Daniel Zimmerli, … Klaus Müller<br />
-<em>ChemMedChem</em> (2007-08-13) <a href="https://doi.org/cw6dkr">https://doi.org/cw6dkr</a><br />
-DOI: <a href="https://doi.org/10.1002/cmdc.200700059">10.1002/cmdc.200700059</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17530727">17530727</a></p>
-</div>
-<div id="ref-16GNoHAFY">
-<p>47. <strong>Atom Type Independent Modeling of the Conformational Energy of Benzylic, Allylic, and Other Bonds Adjacent to Conjugated Systems</strong><br />
-Candide Champion, Stephen J. Barigye, Wanlei Wei, Zhaomin Liu, Paul Labute, Nicolas Moitessier<br />
-<em>Journal of Chemical Information and Modeling</em> (2019-10-07) <a href="https://doi.org/ggh676">https://doi.org/ggh676</a><br />
-DOI: <a href="https://doi.org/10.1021/acs.jcim.9b00581">10.1021/acs.jcim.9b00581</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31589815">31589815</a></p>
-</div>
-<div id="ref-1HYTTY1PU">
-<p>48. <strong>Escaping Atom Types in Force Fields Using Direct Chemical Perception</strong><br />
-David L. Mobley, Caitlin C. Bannan, Andrea Rizzi, Christopher I. Bayly, John D. Chodera, Victoria T. Lim, Nathan M. Lim, Kyle A. Beauchamp, David R. Slochower, Michael R. Shirts, … Peter K. Eastman<br />
-<em>Journal of Chemical Theory and Computation</em> (2018-10-11) <a href="https://doi.org/gffnf3">https://doi.org/gffnf3</a><br />
-DOI: <a href="https://doi.org/10.1021/acs.jctc.8b00640">10.1021/acs.jctc.8b00640</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30351006">30351006</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6245550">PMC6245550</a></p>
-</div>
-<div id="ref-14f8CUfzQ">
-<p>49. <strong>ChemPer: An Open Source Tool for Automatically Generating SMIRKS Patterns</strong><br />
-Caitlin C. Bannan, David Mobley<br />
-(2019-06-21) <a href="https://doi.org/gf66hw">https://doi.org/gf66hw</a><br />
-DOI: <a href="https://doi.org/10.26434/chemrxiv.8304578.v1">10.26434/chemrxiv.8304578.v1</a></p>
-</div>
 </div>
 <h2 class="page_break_before" id="SI">Supporting Information</h2>
 <div id="fig:intel_scaling" class="fignos">
 <figure>
-<img src="images/SI_Intel_scaling_4.svg" alt="" /><figcaption><span>Figure 11:</span> <strong>QC gradient evaluations scale similarly on various processor</strong>
+<img src="images/SI_Intel_scaling_4.svg" alt="" /><figcaption><span>Figure 12:</span> <strong>QC gradient evaluations scale similarly on various processor</strong>
 CPU time (wall time * nthreads) for one gradient evaluation vs. heavy atoms in molecules. All CPUS shown in this figure
 are Intel(R) Xeon(R)</figcaption>
 </figure>
 </div>
 <div id="fig:amd_scaling" class="fignos">
 <figure>
-<img src="images/SI_AMD_scaling_3.svg" alt="" /><figcaption><span>Figure 12:</span> <strong>QC gradient evaluations scale similarly on various processor</strong>
-Same as Figure <a href="#fig:intel_scaling">11</a> but on AMD processors</figcaption>
+<img src="images/SI_AMD_scaling_3.svg" alt="" /><figcaption><span>Figure 13:</span> <strong>QC gradient evaluations scale similarly on various processor</strong>
+Same as Figure <a href="#fig:intel_scaling">12</a> but on AMD processors</figcaption>
 </figure>
 </div>
 <div id="fig:grads_per_opt" class="fignos">
 <figure>
-<img src="images/gradients_per_opts_2.svg" alt="" /><figcaption><span>Figure 13:</span> <strong>Distributions of number of gradient evaluations per optimizations for different size molecules</strong>
+<img src="images/gradients_per_opts_2.svg" alt="" /><figcaption><span>Figure 14:</span> <strong>Distributions of number of gradient evaluations per optimizations for different size molecules</strong>
 The number of gradient evaluations per optimization depends on many factors such as initialization and tolerance, but there
 is also a slight dependency on molecular size as shown in this figure</figcaption>
 </figure>
 </div>
 <div id="fig:opts_per_td" class="fignos">
 <figure>
-<img src="images/opts_per_td_4.svg" alt="" /><figcaption><span>Figure 14:</span> <strong>Distribution of optimizations per torsion drive</strong>
+<img src="images/opts_per_td_4.svg" alt="" /><figcaption><span>Figure 15:</span> <strong>Distribution of optimizations per torsion drive</strong>
 This figures shows the distributions of optimizations per torsion drive when using wavefront propagation</figcaption>
 </figure>
 </div>
 <div id="fig:full_validation_set" class="fignos">
 <figure>
-<img src="images/figure-10-SI.svg" alt="" /><figcaption><span>Figure 15:</span> <strong>Validation set</strong>
+<img src="images/figure-10-SI.svg" alt="" /><figcaption><span>Figure 16:</span> <strong>Validation set</strong>
 All molecules used in the validation set of fragmentation schemes. The bonds are highlighted by how sensitive they are to
 remote fragmentation. The redder bonds are more sensitive while the WBO distributions around the blue bonds do not change
 much with remote fragmentation.</figcaption>
@@ -1256,7 +1210,7 @@ much with remote fragmentation.</figcaption>
 </div>
 <div id="fig:equal-fragments" class="fignos">
 <figure>
-<img src="images/SI-pfizer-wbo-equal.svg" alt="" /><figcaption><span>Figure 16:</span> <strong>WBO fragmentation generates minimal fragment</strong>
+<img src="images/SI-pfizer-wbo-equal.svg" alt="" /><figcaption><span>Figure 17:</span> <strong>WBO fragmentation generates minimal fragment</strong>
 This figure illustrates some cases where the Pfizer scheme and WBO scheme generate the same minimal fragment. While in most cases these fragments
 have WBO distributions that are close to the parent WBO distributions of the highlighted bond, sometimes both minimal fragments are equally poor.
 <strong>[A]</strong>, <strong>[B]</strong>, and <strong>[C]</strong> show fragments of both schemes where important remote, chemical groups are not in the fragment so their overlapping distributions (orange and green)
@@ -1266,44 +1220,44 @@ important chemical substituents so both perform equally well.</figcaption>
 </div>
 <div id="fig:si-phosphate" class="fignos">
 <figure>
-<img src="images/SI-phosphate.svg" alt="" /><figcaption><span>Figure 17:</span> <strong>When Phosphate is removed, WBO distribution shifts even when the phosphate is six bonds away</strong>
+<img src="images/SI-phosphate.svg" alt="" /><figcaption><span>Figure 18:</span> <strong>When Phosphate is removed, WBO distribution shifts even when the phosphate is six bonds away</strong>
 Examples from benchmark set where remote phophsate groups induce long range effects of <strong>[A]</strong> six bonds away and <strong>[B]</strong> four bonds away.</figcaption>
 </figure>
 </div>
 <div id="fig:si-nitrogen" class="fignos">
 <figure>
-<img src="images/SI-nitrogen.svg" alt="" /><figcaption><span>Figure 18:</span> <strong>When a protonated nitrogen is removed, WBO distribution shifts even when the nitrogen is up to eight bonds away</strong>
+<img src="images/SI-nitrogen.svg" alt="" /><figcaption><span>Figure 19:</span> <strong>When a protonated nitrogen is removed, WBO distribution shifts even when the nitrogen is up to eight bonds away</strong>
 Selected examples from the benchmark set were remote nitrogen groups induce long range effects. The distance of the remote nitrogen
 ranges from three bonds away up to eight bonds away.</figcaption>
 </figure>
 </div>
 <div id="fig:si-nitrile" class="fignos">
 <figure>
-<img src="images/SI-nitrile.svg" alt="" /><figcaption><span>Figure 19:</span> <strong>Removing a nitrile group shifts the WBO distribution.</strong>
+<img src="images/SI-nitrile.svg" alt="" /><figcaption><span>Figure 20:</span> <strong>Removing a nitrile group shifts the WBO distribution.</strong>
 Examples from the benchmark set. Removing remote nitrile groups shift the WBO distribution.</figcaption>
 </figure>
 </div>
 <div id="fig:si-sulfonamide" class="fignos">
 <figure>
-<img src="images/SI-sulfonamide.svg" alt="" /><figcaption><span>Figure 20:</span> <strong>Removing a sulfonamide group shifts WBO distribution.</strong>
+<img src="images/SI-sulfonamide.svg" alt="" /><figcaption><span>Figure 21:</span> <strong>Removing a sulfonamide group shifts WBO distribution.</strong>
 Removing the sulfonamide (orange) that is four bonds away moves the fragment’s WBO distribution further away from parent WBO distribution (blue).</figcaption>
 </figure>
 </div>
 <div id="fig:si-oxygen" class="fignos">
 <figure>
-<img src="images/SI-oxygen.svg" alt="" /><figcaption><span>Figure 21:</span> <strong>Removing a deprotonated oxygen shifts the WBO distribution.</strong>
+<img src="images/SI-oxygen.svg" alt="" /><figcaption><span>Figure 22:</span> <strong>Removing a deprotonated oxygen shifts the WBO distribution.</strong>
 Removing a negatively charged nitrogen can effect bonds up to six to eight bonds away.</figcaption>
 </figure>
 </div>
 <div id="fig:si-nitro" class="fignos">
 <figure>
-<img src="images/SI-nitro.svg" alt="" /><figcaption><span>Figure 22:</span> <strong>Removing a ntiro group shifts the WBO distribution.</strong>
+<img src="images/SI-nitro.svg" alt="" /><figcaption><span>Figure 23:</span> <strong>Removing a ntiro group shifts the WBO distribution.</strong>
 Removing a ntiro group effects bonds up to five bonds away.</figcaption>
 </figure>
 </div>
 <div id="fig:si-sulfur" class="fignos">
 <figure>
-<img src="images/SI-sulfur.svg" alt="" /><figcaption><span>Figure 23:</span> <strong>Removing sulfur shifts the WBO distribution.</strong>
+<img src="images/SI-sulfur.svg" alt="" /><figcaption><span>Figure 24:</span> <strong>Removing sulfur shifts the WBO distribution.</strong>
 Removing sulfur shifts the WBO, but the shift is smaller than for other functional groups and this is not always captured by the WBO scheme.
 The figure on the right shows the fragment that the WBO scheme generates (green), however, it also includes the ring. The smaller fragment that
 has the sulfur (red) has an ELF10 WBO that is ~0.1 lower than in the parent, but the WBO distribution (shown in red) is closer to the parent WBO distribution (blue, distance score 0.08)
@@ -1312,7 +1266,7 @@ than the fragment without sulfur (orange, 0.133)</figcaption>
 </div>
 <div id="fig:si-heuristics" class="fignos">
 <figure>
-<img src="images/SI-heuristic.svg" alt="" /><figcaption><span>Figure 24:</span> <strong>Comparing heuristics for growing out fragment</strong>
+<img src="images/SI-heuristic.svg" alt="" /><figcaption><span>Figure 25:</span> <strong>Comparing heuristics for growing out fragment</strong>
 <strong>[A]</strong> Distance score and computational cost of fragments generated with the shortest path heuristic.
 <strong>[B]</strong> Same as <strong>A</strong> with the greater WBO heuristic.</figcaption>
 </figure>
