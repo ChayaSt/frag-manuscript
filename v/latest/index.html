@@ -11,7 +11,7 @@
   <meta name="author" content="Lee-Ping Wang" />
   <meta name="author" content="David L Mobley" />
   <meta name="author" content="John D Chodera" />
-  <meta name="dcterms.date" content="2020-07-30" />
+  <meta name="dcterms.date" content="2020-08-09" />
   <meta name="keywords" content="forcefield, force-field, cheminformatics" />
   <title>Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans</title>
   <style>
@@ -34,8 +34,8 @@
   <meta name="citation_title" content="Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans" />
   <meta property="og:title" content="Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans" />
   <meta property="twitter:title" content="Capturing non-local through-bond effects when fragmenting molecules for quantum chemical torsion scans" />
-  <meta name="dc.date" content="2020-07-30" />
-  <meta name="citation_publication_date" content="2020-07-30" />
+  <meta name="dc.date" content="2020-08-09" />
+  <meta name="citation_publication_date" content="2020-08-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://ChayaSt.github.io/frag-manuscript/" />
   <meta name="citation_pdf_url" content="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/a36e79256f94be7bec5430078c7d908dd052073d/" />
-  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/a36e79256f94be7bec5430078c7d908dd052073d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/a36e79256f94be7bec5430078c7d908dd052073d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/8d87a8fc6f3a2f13021be1ef9b08da933f153426/" />
+  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/8d87a8fc6f3a2f13021be1ef9b08da933f153426/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/8d87a8fc6f3a2f13021be1ef9b08da933f153426/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -100,10 +100,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://ChayaSt.github.io/frag-manuscript/v/a36e79256f94be7bec5430078c7d908dd052073d/">permalink</a>)
+(<a href="https://ChayaSt.github.io/frag-manuscript/v/8d87a8fc6f3a2f13021be1ef9b08da933f153426/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ChayaSt/frag-manuscript/tree/a36e79256f94be7bec5430078c7d908dd052073d">ChayaSt/frag-manuscript@a36e792</a>
-on July 30, 2020.
+from <a href="https://github.com/ChayaSt/frag-manuscript/tree/8d87a8fc6f3a2f13021be1ef9b08da933f153426">ChayaSt/frag-manuscript@8d87a8f</a>
+on August 9, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -306,7 +306,7 @@ Below, we give a more precise definition of <em>conjugation</em> and <em>hyperco
 Conjugation is formally defined as the overlap of p-orbital electrons across <span class="math inline">\(\sigma\)</span> bonds <span class="citation" data-cites="brHoyaiC 10vgXCYFf">[<a href="#ref-brHoyaiC" role="doc-biblioref">40</a>,<a href="#ref-10vgXCYFf" role="doc-biblioref">41</a>]</span>, such as what occurs in benzene or butadiene.
 Hyperconjugation is the interaction of electrons in a donating bonding orbital to an anti-bonding orbital <span class="citation" data-cites="l3TAWQJ6">[<a href="#ref-l3TAWQJ6" role="doc-biblioref">42</a>]</span>.
 In this study, for simplicity, we use the term conjugation to refer to all modes of conjugation and hyperconjugation.</p>
-<h2 id="results">3. Results</h2>
+<h2 id="results-and-discussion">3. Results and Discussion</h2>
 <h3 id="fragmenting-molecules-for-quantum-chemical-torsion-scans-can-alter-the-chemical-environment-of-the-torsion.">3.1 Fragmenting molecules for quantum chemical torsion scans can alter the chemical environment of the torsion.</h3>
 <div id="fig:biphenyls" class="fignos">
 <figure>
@@ -486,7 +486,7 @@ of the set.</figcaption>
 <p>This left us with 730 small molecules.
 Representative molecules are shown in Figure <a href="#fig:validation_set_rep">4</a>.
 Charged molecules exacerbate remote substituent sensitivity and many molecules are in charged states at physiological pH.
-To ensure that our dataset is representative of drugs at physiological pH, we used the OpenEye <code>EnumerateReasonableTautomers</code> to generate tautomers that are likely significantly populated at pH ~7.4 <span class="citation" data-cites="16hZpgNca">[<a href="#ref-16hZpgNca" role="doc-biblioref">44</a>]</span>. This tautomer enumeration extended the set to 1289 small molecules <code class="red">[hold for SI smi file]</code>.
+To ensure that our dataset is representative of drugs at physiological pH, we used the OpenEye <code>EnumerateReasonableTautomers</code> to generate tautomers that are likely significantly populated at pH ~7.4 <span class="citation" data-cites="16hZpgNca">[<a href="#ref-16hZpgNca" role="doc-biblioref">44</a>]</span>. This tautomer enumeration extended the set to 1289 small molecules.
 We then generated all possible fragments of these molecules by using a combinatorial fragmentation scheme.
 In this scheme, every rotatable bond is fragmented and then all possible connected fragments are generated where the smallest fragment has 4 heavy atoms and the largest fragment is the parent molecule.
 This scheme generated ~300,000 fragments.</p>
@@ -533,8 +533,7 @@ To compare these distributions, we compute the maximum mean discrepancy (MMD) <s
 MMD becomes:</p>
 <p><span id="eq:mmd_sqrd" class="eqnos"><span class="math display">\[MMD = \sqrt{(\mathbb{E}[X]-\mathbb{E}[Y])^2 + (\mathbb{E}[X^2] - \mathbb{E}[Y^2])^2}\]</span><span class="eqnos-number">(2)</span></span></p>
 <p>where [X] is the expected value of the parent WBO and [Y] is the expected value of fragment WBO.
-Including the squared mean incorporates the second moment of the distribution and helps distinguish distributions both with different means and variances. <code class="red">{JDC: This last sentence doesn't make any sense. Are you explicitly including the variance or the second moment?}</code>
-<code class="orange">{CDS: I am including the second moment which helps distinguish distributions by their spread}</code>
+Including the squared mean incorporates the second moment of the distribution and helps distinguish distributions both with different means and variances.
 It is important to incorporate changes in variance given how the variance of the WBO distributions change for different chemical environments <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">32</a>]</span>.
 In general, changes in WBO distribution variance corresponds to changes in relative torsion barrier heights <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">32</a>]</span>.</p>
 <p>In Figure <a href="#fig:dabrafenib_wbo_dists">5</a>, the MMD which we refer to distance score is shown with the color map.
@@ -761,7 +760,7 @@ This discrepancy is a result of the asymmetry in the parent’s molecule QC tors
 The asymmetry arises from favorable through-space interactions between the nitrile and hydrogens on the methyl on the imidazole at dihedral angles 15<span class="math inline">\(^{\circ}\)</span> - 115<span class="math inline">\(^{\circ}\)</span>.
 Such long-range through-space favorable interactions are effects that should be handled by non-bonded force field terms so they should be avoided in the data used to fit torsion parameters to.
 Therefore, we view Figure ?? E as a good result.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">4. Conclusion</h2>
 <p>We have shown that the AM1 ELF10 WBO estimate is a simple, yet informative quantity about the extent of binding between two connecting atoms,
 thus descriptive of a bond’s chemical environment, its level of conjugation, and resistance to rotation.
 We can use the change in WBO of a bond to quantify the amount of disruption of its chemical environment due to remote chemical
@@ -792,7 +791,8 @@ To expand protonation and tautomeric states, we used <code>OEGetReasonableTautom
 <code>states.py</code> module in <code>fragmenter</code> (version v0.0.2+175.g6fbbf32 for this original set, but versions v0.0.3, v0.0.4 and 0.0.6 will
 generate the same results with the same options).
 We set <code>pKaNorm</code> to True so that the ionization state of each tautomer is assigned to a predominant state at pH ~ 7.4.
-This generated 1289 molecules.</p>
+This generated 1289 molecules.
+The smi file with all 1289 molecules is located in the manuscript’s <a href="https://github.com/choderalab/fragmenter_data/blob/master/combinatorial_fragmentation/enumerate_states/validation_set.smi">data repository</a></p>
 <p>We then used the <code>CombinatorialFragmenter</code> from <code>fragmenter</code> version v0.0.2+179.g0e7e9e3 (versions v0.0.3 and v0.0.4 will generate
 the same fragments with the same options) to generate all possible fragments for each molecules.
 We set the option <code>functional_groups</code> to False so that all functional groups besides rings will also get fragmented so we can use the data to explore which functional groups
@@ -802,7 +802,7 @@ This generated ~300,000 fragments.</p>
 <p>We then used Omega (OpenEye version 2019.Apr.2) to generate conformers for each fragment and calculated each conformer’s WBOs as described above.
 All scripts used to generate this dataset are in
 <a href="https://github.com/choderalab/fragmenter_data/tree/master/combinatorial_fragmentation">github.com/choderalab/fragmenter_data/combinatorial_fragmentation</a>.
-The dataset is available as zip files on <code class="red">(hold for link to where we will host the data)</code>.</p>
+The dataset is available as zip files on Zenodo <span class="citation" data-cites="EvyZZ20G">[<span class="citeproc-not-found" data-reference-id="EvyZZ20G"><strong>???</strong></span>]</span>.</p>
 <p>The benchmark set used to evaluate disruption thresholds and compare to other schemes were chosen as described in Section 3.5.2.
 <code>fragmenter</code> version 0.0.6 was used to generate fragments for the different schemes and disruption thresholds.</p>
 <h3 id="fragmenting-molecules">5.2 Fragmenting molecules</h3>
@@ -911,9 +911,9 @@ heuristic generates smaller fragments (Figure <a href="#fig:si-heuristics">25</a
 <h4 id="fragmenter-validation-dataset">5.2 Fragmenter validation dataset</h4>
 <p>The torsion scans shown in Figure <a href="#fig:validate_fragmenter">11</a> were run on QCArchive <span class="citation" data-cites="QS8UBx4">[<a href="#ref-QS8UBx4" role="doc-biblioref">51</a>]</span>.
 They were computed with the TorsionDrive <span class="citation" data-cites="Kad6jO9v">[<a href="#ref-Kad6jO9v" role="doc-biblioref">19</a>]</span> and geomeTRIC <span class="citation" data-cites="zyjNwQ0g">[<a href="#ref-zyjNwQ0g" role="doc-biblioref">52</a>]</span>,
-as standalone geometry optimizer interfaced with teh QCEngine <span class="citation" data-cites="doi:https://github.com/MolSSI/QCEngine">[<span class="citeproc-not-found" data-reference-id="doi:https://github.com/MolSSI/QCEngine"><strong>???</strong></span>]</span> project.
-The gradients were computed at the B3LYP-D3(BJ)/DZVP level of theory <span class="citation" data-cites="17YEERBX3 flKRoCNc CqesmIsy">[<a href="#ref-17YEERBX3" role="doc-biblioref">15</a>,<a href="#ref-flKRoCNc" role="doc-biblioref">53</a>,<a href="#ref-CqesmIsy" role="doc-biblioref">54</a>]</span>.
-The torsion scans are available on QCArchive <span class="citation" data-cites="doi:https://qcarchive.molssi.org">[<span class="citeproc-not-found" data-reference-id="doi:https://qcarchive.molssi.org"><strong>???</strong></span>/]</span> as a <code>TorsionDriveDataset</code> named <code>OpenFF Fragmenter Validation 1.0</code>.</p>
+as standalone geometry optimizer interfaced with the QCEngine <span class="citation" data-cites="Hu5LsEaN">[<a href="#ref-Hu5LsEaN" role="doc-biblioref">53</a>]</span> project.
+The gradients were computed at the B3LYP-D3(BJ)/DZVP level of theory <span class="citation" data-cites="17YEERBX3 flKRoCNc CqesmIsy">[<a href="#ref-17YEERBX3" role="doc-biblioref">15</a>,<a href="#ref-flKRoCNc" role="doc-biblioref">54</a>,<a href="#ref-CqesmIsy" role="doc-biblioref">55</a>]</span>.
+The torsion scans are available on QCArchive <span class="citation" data-cites="qXilVj0B">[<a href="#ref-qXilVj0B" role="doc-biblioref">17</a>]</span> as a <code>TorsionDriveDataset</code> named <code>OpenFF Fragmenter Validation 1.0</code>.</p>
 <h2 id="code-and-data">Code and data</h2>
 <ul>
 <li><a href="https://github.com/openforcefield/fragmenter">GitHub repository</a> fragmenter code.</li>
@@ -1239,7 +1239,7 @@ Open Force Field Initiative<br />
 <div id="ref-ggfhCq68">
 <p>50. <strong>openforcefield/openforcefield</strong><br />
 Open Force Field Initiative<br />
-(2020-07-30) <a href="https://github.com/openforcefield/openforcefield">https://github.com/openforcefield/openforcefield</a></p>
+(2020-08-07) <a href="https://github.com/openforcefield/openforcefield">https://github.com/openforcefield/openforcefield</a></p>
 </div>
 <div id="ref-QS8UBx4">
 <p>51. <strong>Perspective: Computational chemistry software and its advancement as illustrated through three grand challenge cases for molecular science</strong><br />
@@ -1250,16 +1250,21 @@ DOI: <a href="https://doi.org/10.1063/1.5052551">10.1063/1.5052551</a> · PMID: 
 <div id="ref-zyjNwQ0g">
 <p>52. <strong>leeping/geomeTRIC</strong><br />
 Lee-Ping<br />
-(2020-07-23) <a href="https://github.com/leeping/geomeTRIC">https://github.com/leeping/geomeTRIC</a></p>
+(2020-08-01) <a href="https://github.com/leeping/geomeTRIC">https://github.com/leeping/geomeTRIC</a></p>
+</div>
+<div id="ref-Hu5LsEaN">
+<p>53. <strong>MolSSI/QCEngine</strong><br />
+The Molecular Science Software Institute<br />
+(2020-07-30) <a href="https://github.com/MolSSI/QCEngine">https://github.com/MolSSI/QCEngine</a></p>
 </div>
 <div id="ref-flKRoCNc">
-<p>53. <strong>Density‐functional thermochemistry. III. The role of exact exchange</strong><br />
+<p>54. <strong>Density‐functional thermochemistry. III. The role of exact exchange</strong><br />
 Axel D. Becke<br />
 <em>The Journal of Chemical Physics</em> (1993-04) <a href="https://doi.org/d2fq9j">https://doi.org/d2fq9j</a><br />
 DOI: <a href="https://doi.org/10.1063/1.464913">10.1063/1.464913</a></p>
 </div>
 <div id="ref-CqesmIsy">
-<p>54. <strong>Effect of the damping function in dispersion corrected density functional theory</strong><br />
+<p>55. <strong>Effect of the damping function in dispersion corrected density functional theory</strong><br />
 Stefan Grimme, Stephan Ehrlich, Lars Goerigk<br />
 <em>Journal of Computational Chemistry</em> (2011-05) <a href="https://doi.org/b3ztst">https://doi.org/b3ztst</a><br />
 DOI: <a href="https://doi.org/10.1002/jcc.21759">10.1002/jcc.21759</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21370243">21370243</a></p>
