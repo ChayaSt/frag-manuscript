@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://ChayaSt.github.io/frag-manuscript/" />
   <meta name="citation_pdf_url" content="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/6775e086ae9b8ecc653148e46e1096b667ed4651/" />
-  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/6775e086ae9b8ecc653148e46e1096b667ed4651/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/6775e086ae9b8ecc653148e46e1096b667ed4651/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/c42367a5affc6835c72a359b67a911d5107ac5c2/" />
+  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/c42367a5affc6835c72a359b67a911d5107ac5c2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/c42367a5affc6835c72a359b67a911d5107ac5c2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -100,9 +100,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://ChayaSt.github.io/frag-manuscript/v/6775e086ae9b8ecc653148e46e1096b667ed4651/">permalink</a>)
+(<a href="https://ChayaSt.github.io/frag-manuscript/v/c42367a5affc6835c72a359b67a911d5107ac5c2/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ChayaSt/frag-manuscript/tree/6775e086ae9b8ecc653148e46e1096b667ed4651">ChayaSt/frag-manuscript@6775e08</a>
+from <a href="https://github.com/ChayaSt/frag-manuscript/tree/c42367a5affc6835c72a359b67a911d5107ac5c2">ChayaSt/frag-manuscript@c42367a</a>
 on August 23, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -243,8 +243,9 @@ While this can also happen in smaller molecules such as ethylene glycol <span cl
 Many of these algorithms fall into two categories:</p>
 <ol type="1">
 <li>fragmenting molecules for synthetic accessibility <span class="citation" data-cites="xbUA1nkO 15j2SwU5A 1BZlse7qR">[<a href="#ref-xbUA1nkO" role="doc-biblioref">22</a>,<a href="#ref-15j2SwU5A" role="doc-biblioref">23</a>,<a href="#ref-1BZlse7qR" role="doc-biblioref">24</a>]</span> and</li>
-<li>fragmenting molecules to achieve linear scaling for QC calculations <span class="citation" data-cites="vm6HUPt4 ll3I4A87 nRywz8At EOlFsQFX">[<a href="#ref-vm6HUPt4" role="doc-biblioref">25</a>,<a href="#ref-ll3I4A87" role="doc-biblioref">26</a>,<a href="#ref-nRywz8At" role="doc-biblioref">27</a>,<a href="#ref-EOlFsQFX" role="doc-biblioref">28</a>]</span>.
-Fragmentation schemes for synthetic accessibility find building blocks for combinatorial and fragment-based drug design.
+<li>fragmenting molecules to achieve linear scaling for QC calculations <span class="citation" data-cites="vm6HUPt4 ll3I4A87 nRywz8At EOlFsQFX">[<a href="#ref-vm6HUPt4" role="doc-biblioref">25</a>,<a href="#ref-ll3I4A87" role="doc-biblioref">26</a>,<a href="#ref-nRywz8At" role="doc-biblioref">27</a>,<a href="#ref-EOlFsQFX" role="doc-biblioref">28</a>]</span>.</li>
+</ol>
+<p>Fragmentation schemes for synthetic accessibility find building blocks for combinatorial and fragment-based drug design.
 Cleavage happens at bonds where it makes sense for chemical reactions and does not consider how those cuts affect the electronic properties of the fragments.
 For retrosynthetic applications, many cleavage points are at functional groups because those are the reactive sites of molecules.
 However, for our application, we especially do not want to fragment at these reactive points given their likelihood of having strong electron-donating or withdrawing effects which in turn strongly impact the torsional potential targeted for parameterization.
@@ -252,8 +253,7 @@ Fragmentation algorithms for linear-scaling quantum chemical approaches such as 
 specify where the cuts should be or which bonds not to fragment.
 Furthermore, besides the scheme suggested by Rai et al. <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">31</a>]</span>, none of these methods address the needs specific to fragmenting molecules for QC torsion scans for fitting MM force field parameters.
 When fragmenting molecules for QC torsion scans, fragments need to include all atoms involved in 1-4 interactions, since they are incorporated in the fitting procedure.
-We also need a systematic way to determine if remote substituents significantly alter the barrier to rotation around the central torsion bond.</li>
-</ol>
+We also need a systematic way to determine if remote substituents significantly alter the barrier to rotation around the central torsion bond.</p>
 <p>In this work, we use the Wiberg Bond Order (WBO) <span class="citation" data-cites="BES2Ksiq">[<a href="#ref-BES2Ksiq" role="doc-biblioref">32</a>]</span>, which is both simple to calculate from semi-empirical QC methods and is sensitive to the chemical environment around a bond <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">33</a>]</span>.
 WBOs quantify electron population overlap across bonds or the degree of bonding between atoms.
 Bond orders are correlated with bond vibrational frequencies <span class="citation" data-cites="hHhjgmIm 14qKIxxbD">[<a href="#ref-hHhjgmIm" role="doc-biblioref">34</a>,<a href="#ref-14qKIxxbD" role="doc-biblioref">35</a>]</span> and WBOs are used to predict trigger bonds in high energy-density material because they are correlated with the strength of bonds <span class="citation" data-cites="cAeBUxqm">[<a href="#ref-cAeBUxqm" role="doc-biblioref">36</a>]</span>, a property which also directly affects the torsion potential.
