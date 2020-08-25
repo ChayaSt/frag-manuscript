@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/ChayaSt/frag-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://ChayaSt.github.io/frag-manuscript/>.
-The permalink for this webpage version is <https://ChayaSt.github.io/frag-manuscript/v/74c5c154f35fc620315f43182787b3040687975e/>.
+The permalink for this webpage version is <https://ChayaSt.github.io/frag-manuscript/v/8a4367cf9e021687c236c23962987044deecee7d/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://ChayaSt.github.io/frag-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`74c5c154f35fc620315f43182787b3040687975e`](https://github.com/ChayaSt/frag-manuscript/commit/74c5c154f35fc620315f43182787b3040687975e).
+[`8a4367cf9e021687c236c23962987044deecee7d`](https://github.com/ChayaSt/frag-manuscript/commit/8a4367cf9e021687c236c23962987044deecee7d).

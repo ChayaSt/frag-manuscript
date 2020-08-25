@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://ChayaSt.github.io/frag-manuscript/" />
   <meta name="citation_pdf_url" content="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ChayaSt.github.io/frag-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/74c5c154f35fc620315f43182787b3040687975e/" />
-  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/74c5c154f35fc620315f43182787b3040687975e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/74c5c154f35fc620315f43182787b3040687975e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ChayaSt.github.io/frag-manuscript/v/8a4367cf9e021687c236c23962987044deecee7d/" />
+  <meta name="manubot_html_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/8a4367cf9e021687c236c23962987044deecee7d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ChayaSt.github.io/frag-manuscript/v/8a4367cf9e021687c236c23962987044deecee7d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -100,9 +100,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://ChayaSt.github.io/frag-manuscript/v/74c5c154f35fc620315f43182787b3040687975e/">permalink</a>)
+(<a href="https://ChayaSt.github.io/frag-manuscript/v/8a4367cf9e021687c236c23962987044deecee7d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/ChayaSt/frag-manuscript/tree/74c5c154f35fc620315f43182787b3040687975e">ChayaSt/frag-manuscript@74c5c15</a>
+from <a href="https://github.com/ChayaSt/frag-manuscript/tree/8a4367cf9e021687c236c23962987044deecee7d">ChayaSt/frag-manuscript@8a4367c</a>
 on August 25, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -185,14 +185,14 @@ Torsion potentials derived from quantum chemical (QC) calculations are critical 
 To reduce computational cost and avoid the complications of distal through-space intramolecular interactions, molecules are generally fragmented into smaller entities to carry out QC torsion scans.
 However, torsion potentials, particularly for conjugated bonds, can be strongly affected by through-bond chemistry distal to the torsion itself.
 Poor fragmentation schemes have the potential to significantly disrupt electronic properties in the region around the torsion by removing important, distal chemistries, leading to poor representation of the parent molecule’s chemical environment and the resulting torsion energy profile.
-Here we have show that a rapidly computable quantity, the fractional Wiberg bond order (WBO), is a sensitive reporter on whether the chemical environment around a torsion has been disrupted.
+Here we show that a rapidly computable quantity, the fractional Wiberg bond order (WBO), is a sensitive reporter on whether the chemical environment around a torsion has been disrupted.
 We show that the WBO can be used as a surrogate to assess the robustness of fragmentation schemes and identify conjugated bond sets.
 We use this concept to construct a validation set by exhaustively fragmenting a set of druglike organic molecules and examine their corresponding WBO distributions derived from accessible conformations that can be used to evaluate fragmentation schemes.
 To illustrate the utility of the WBO in assessing fragmentation schemes that preserve the chemical environment, we propose a new fragmentation scheme that uses rapidly-computable AM1 WBOs, which are available essentially for free as part of standard AM1-BCC partial charge assignment.
 This approach can simultaneously maximize the chemical equivalency of the fragment and the substructure in the larger molecule while minimizing fragment size to accelerate QC torsion potential computation for small molecules and reducing undesired through-space steric interactions.</p>
 <h2 id="introduction">1. Introduction</h2>
 <p>Molecular mechanics (MM) small molecule force fields are essential to molecular design for chemical biology and drug discovery, as well as the use of molecular simulation to understand the behavior of biomolecular systems.
-However, small molecule force fields have lagged behind protein force fields given the larger chemical space these force fields must cover to provide good accuracy over the space for druglike ligands, common metabolites, and other small biomolecules <span class="citation" data-cites="mbmV3Fg8 18mvPmwwB">[<a href="#ref-mbmV3Fg8" role="doc-biblioref">1</a>,<a href="#ref-18mvPmwwB" role="doc-biblioref">2</a>]</span>.
+However, small molecule force fields have lagged behind protein force fields given the larger chemical space these force fields must cover to provide good accuracy for druglike ligands, common metabolites, and other small biomolecules <span class="citation" data-cites="mbmV3Fg8 18mvPmwwB">[<a href="#ref-mbmV3Fg8" role="doc-biblioref">1</a>,<a href="#ref-18mvPmwwB" role="doc-biblioref">2</a>]</span>.
 Torsion potentials for small molecule force fields are particularly problematic because historical approaches to their determination tend to produce parameters that generalize poorly <span class="citation" data-cites="13fQUQyf9">[<a href="#ref-13fQUQyf9" role="doc-biblioref">3</a>]</span>.
 In particular, torsion potentials where the central bond is part of a conjugated system of bonds can be strongly influenced by distal substituents, an effect very difficult to represent in a force field using only local chemistry to define the parameters.
 This lack of generalizability has led many practitioners to aim to improve the force field accuracy by refitting torsion parameters for individual molecules in a semi-automated bespoke fashion <span class="citation" data-cites="Io39j4ig 5cjbQnbG CstjV2w8">[<a href="#ref-Io39j4ig" role="doc-biblioref">4</a>,<a href="#ref-5cjbQnbG" role="doc-biblioref">5</a>,<a href="#ref-CstjV2w8" role="doc-biblioref">6</a>]</span>.
@@ -235,7 +235,7 @@ Reducing the size of the molecule to be used in QC torsion drive computations to
 </ol>
 <ol start="2" type="1">
 <li><strong>Intramolecular interactions complicate torsion drives and torsion parameter fitting</strong>
-In larger molecules, there is a greater potential for long-range through-space intermolecular interaction (e.g hydrogen bonding) that should be captured by non-bonded parameters to contribute to the torsion profile.
+In larger molecules, there is a greater potential for long-range through-space intermolecular interaction (e.g hydrogen bonding) that should be captured by non-bonded parameters, to contribute to the torsion profile.
 This can be difficult to decouple from the 1-4 interactions that torsion parameters are supposed to capture.
 While this can also happen in smaller molecules such as ethylene glycol <span class="citation" data-cites="Kad6jO9v">[<a href="#ref-Kad6jO9v" role="doc-biblioref">20</a>]</span> this problem is reduced when a minimal model molecule containing the model chemistry around the torsion is used, albeit not eliminated.</li>
 </ol>
@@ -287,7 +287,7 @@ The rules we use are defined in Section 3.4.</p>
 We define the cost as estimated in Figure <a href="#fig:b3lyp_scaling">1</a></p>
 <p><span class="math display">\[ c(G&#39;) \propto (|V&#39;|)^{2.6} \]</span></p>
 <p>which leads to minimizing</p>
-<p><span class="math display">\[ \sum_{e&#39; \in \mathcal{E}} |\gamma(e&#39;;  G&#39;) + c(G&#39;; e&#39;)|\]</span></p>
+<p><span class="math display">\[ \sum_{e&#39; \in \mathcal{E}} [|\gamma(e&#39;;  G&#39;)| + c(G&#39;; e&#39;)]\]</span></p>
 <p>The search space of <span class="math inline">\(\mathcal G\)</span> for each rotatable bond is combinatorial, and its upper bound is <span class="math inline">\({|V|\choose{4}} + {|V|\choose{5}} + ... {|V|\choose{|V|}}\)</span> since all <span class="math inline">\(G&#39; \in \mathcal G\)</span> need to be connected and rings are not fragmented.
 To reduce the search space, we also define a list of functional groups that should not be fragmented in Table <a href="#tbl:fgroups">1</a>.</p>
 <p>Given how large the search space can become, we use several heuristics, described in Section 3.4.</p>
@@ -295,7 +295,7 @@ To reduce the search space, we also define a list of functional groups that shou
 <p>In most MM force fields, atom types are used to encode the local chemical environment of atoms for which parameters are assigned to <span class="citation" data-cites="mbmV3Fg8">[<a href="#ref-mbmV3Fg8" role="doc-biblioref">1</a>]</span>.
 This allows parameters developed for one atom to be transferred to another atom in a similar chemical environment.
 However, since atom types are locally defined, they do not always capture long-range effects such as conjugation.
-This is especially problematic for torsions since the torsion energy function (or profile) of a bond is determined by a combination of local and non-local effects from conjugation, hyperconjugation, sterics, and electrostatics <span class="citation" data-cites="fpE0Y69s AWj8hnbG Vx7ALVw2 1DVkKVgPL Y2tI6hoE">[<a href="#ref-fpE0Y69s" role="doc-biblioref">37</a>,<a href="#ref-AWj8hnbG" role="doc-biblioref">38</a>,<a href="#ref-Vx7ALVw2" role="doc-biblioref">39</a>,<a href="#ref-1DVkKVgPL" role="doc-biblioref">40</a>,<a href="#ref-Y2tI6hoE" role="doc-biblioref">41</a>]</span>.
+This is especially problematic for torsions since the torsion energy function (or profile) of a bond is determined by a combination of local and non-local effects such as conjugation, hyperconjugation, sterics, and electrostatics <span class="citation" data-cites="fpE0Y69s AWj8hnbG Vx7ALVw2 1DVkKVgPL Y2tI6hoE">[<a href="#ref-fpE0Y69s" role="doc-biblioref">37</a>,<a href="#ref-AWj8hnbG" role="doc-biblioref">38</a>,<a href="#ref-Vx7ALVw2" role="doc-biblioref">39</a>,<a href="#ref-1DVkKVgPL" role="doc-biblioref">40</a>,<a href="#ref-Y2tI6hoE" role="doc-biblioref">41</a>]</span>.
 In this study, we define <em>local atoms</em> as those within two bonds of the central bond of a torsion, and <em>remote atoms</em> as any atom beyond those two bonds.</p>
 <p>Steric and electrostatic interactions are, in principle, accounted for by non-bonded terms in most force fields, so a torsion profile would ideally primarily capture conjugation or hyperconjugation, and only the 1-4 nonbonded effects.
 Using small fragments to generate QC torsion profiles reduces non-local electrostatics and steric interactions from contributing to the torsion profile.
@@ -314,11 +314,11 @@ In this study, for simplicity, we use the term conjugation to refer to all modes
 [<strong>A</strong>] QC torsion scans of the central bond in biphenyls in different protonation states. The colors of the QC torsion scans
 correspond to the highlighted central bond of the biphenyls. The Wiberg bond order is shown in the box next to the central bond.
 [<strong>B</strong>] Same as <strong>A</strong> but with fluorine on the ortho position.
-[<strong>C</strong>] Same as <strong>A</strong> but with Chlorine on the ortho position</figcaption>
+[<strong>C</strong>] Same as <strong>A</strong> but with chlorine on the ortho position</figcaption>
 </figure>
 </div>
 <p>Small chemical changes to molecules, both local and remote, can drastically alter their electronic properties.
-This poses a challenge to force field parametrization, specifically that of torsion parameters which rely on computationally expensive QC torsion scans for reference data [cite rowley preprint].
+This poses a challenge to force field parametrization, specifically that of torsion parameters which rely on computationally expensive QC torsion scans for reference data <span class="citation" data-cites="Y2tI6hoE">[<a href="#ref-Y2tI6hoE" role="doc-biblioref">41</a>]</span>.
 Given how poorly QC torsion scans scale with molecular size, molecules are fragmented to smaller entities to generate the reference data.
 The assumption is that torsion scans generated for substructures can be used as reference data for other molecules that share the substructure.
 However, seemingly similar torsion types in different chemical environments can have very different torsion potential.
@@ -346,7 +346,7 @@ When fragmenting molecules, we aim to avoid destroying a bond’s chemical envir
 <img src="images/fragmentation_scheme.svg" alt="" /><figcaption><span>Figure 3:</span> <strong>Illustration of fragmentation scheme using WBOs.</strong>
 First, we find the rotatable bonds and calculate their ELF10 WBOs.
 Then, for each rotatable bond, we generate the minimal fragment about each rotatable bond as described in the text (Section 3.4).
-We then compute ELF10 WBOs for the central torsion bonds around which the minimal fragments were generated and check if the new ELF10 WBO is within the disruption threshold relative to the parent’s LEF10 WBO.
+We then compute ELF10 WBOs for the central torsion bonds around which the minimal fragments were generated and check if the new ELF10 WBO is within the disruption threshold relative to the parent’s ELF10 WBO.
 If the absolute difference is greater than the disruption threshold, substituents are added, one at a time, and the ELF10 WBO is recalculated. The red circle illustrates such a fragment.
 The absolute difference of its WBO relative to the parent (0.99 in the minimal fragment vs 1.09 in the parent molecule) is greater than the disruption threshold of 0.03.
 The fragment continues to grow until the central bond’s ELF10 WBO is within the disruption threshold of the ELF10 WBO of the bond in the parent molecule.
@@ -367,7 +367,7 @@ But since conformation-dependent variance of WBO distributions are higher for co
 <li>Find acyclic bond. For this step we use the SMARTS pattern <code>[!$(*#*)&amp;!D1]-,=;!@[!$(*#*)&amp;!D1]</code>.</li>
 <li>Keep the four atoms in the torsion quartet and all atoms bonded to those atoms. This ensures that all 1-5 atoms are included in the minimal fragment.</li>
 <li>If any of the atoms are part of a ring or functional group shown in Table <a href="#tbl:fgroups">1</a>, include ring and functional groups atoms to avoid ring breaking and fragmenting functional groups that contain more than one heteroatom.
-The list in Table ?? are the functional groups that were present in the validation and is therefor not exhaustive.</li>
+The list in Table <a href="#tbl:fgroups">1</a> are the functional groups that were present in the validation and is therefor not exhaustive.</li>
 <li>Keep all ortho substitutents relative to the torsion quartet atoms.</li>
 <li>N, O and S are capped with methyl. All other open valence atoms are capped with hydrogen.</li>
 <li>Calculate ELF10 WBO for fragment.</li>
@@ -532,11 +532,11 @@ To compare these distributions, we compute the maximum mean discrepancy (MMD) <s
 <p>where the feature map <span class="math inline">\(\varphi: \mathcal{X} \rightarrow \mathcal{H}\)</span> we use is squared <span class="math inline">\(\varphi(x) = (x, x^2)\)</span> and the
 MMD becomes:</p>
 <p><span id="eq:mmd_sqrd" class="eqnos"><span class="math display">\[MMD = \sqrt{(\mathbb{E}[X]-\mathbb{E}[Y])^2 + (\mathbb{E}[X^2] - \mathbb{E}[Y^2])^2}\]</span><span class="eqnos-number">(2)</span></span></p>
-<p>where [X] is the expected value of the parent WBO and [Y] is the expected value of fragment WBO.
+<p>where <span class="math inline">\(\mathbb{E}[X]\)</span> is the expected value of the parent WBO and <span class="math inline">\(\mathbb{E}[Y]\)</span> is the expected value of fragment WBO.
 Including the squared mean incorporates the second moment of the distribution and helps distinguish distributions both with different means and variances.
 It is important to incorporate changes in variance given how the variance of the WBO distributions change for different chemical environments <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">33</a>]</span>.
 In general, changes in WBO distribution variance corresponds to changes in relative torsion barrier heights <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">33</a>]</span>.</p>
-<p>In Figure <a href="#fig:dabrafenib_wbo_dists">5</a>, the MMD which we refer to distance score is shown with the color map.
+<p>In Figure <a href="#fig:dabrafenib_wbo_dists">5</a>, the MMD, which we refer to distance score, is shown with the color map.
 The distributions in Figure <a href="#fig:dabrafenib_wbo_dists">5</a>, A are shaded with the distance score.
 The scores clearly differentiates the shifted distributions.</p>
 <h4 id="good-fragmentation-schemes-minimize-both-chemical-environment-disruption-and-fragment-size">3.3.2 Good fragmentation schemes minimize both chemical environment disruption and fragment size</h4>
@@ -605,7 +605,7 @@ We then plotted all fragments from the validation set for different thresholds (
 When the threshold is low, the fragmentation scheme will generate fragments which have very good distance scores, but many of them will be too big for computationally efficient QC torsion scan.
 On the other hand, when the disruption threshold is too low, the scheme generates fragments that are small but the distance scores are too big.
 For the molecules we tested, a threshold of 0.03 leads to the most fragments in the lower left quadrant (defined as cost &lt; 4000 seconds per gradient evaluation and score &lt; 0.05) as shown in Table <a href="#tbl:benchmark">2</a>.</p>
-<p>This threshold is similar to what we found when we looked at the distribution of standard deviations for WBO distributions with respect to conformations (Figure ??, blue).
+<p>This threshold is similar to what we found when we looked at the distribution of standard deviations for WBO distributions with respect to conformations <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">33</a>]</span>.
 Most of them fall under 0.03.
 Both of these data points lead us to recommend a WBO disruption threshold of 0.03 for our fragmentation scheme.
 While the current scheme does not provide a perfect solution, plots in Figure <a href="#fig:joint_plots">7</a> shows fewer fragments outside of the lower left region for thresholds 0.01, 0.03 and 0.05.
@@ -670,10 +670,12 @@ In most cases, using the WBO as an indicator improves the distance score (shown 
 <p>In the benchmark experiment (Figure <a href="#fig:joint_plots">7</a>), Omega was used to generate the conformers for which the WBOs were calculated.
 Omega aims to generate low energy conformers <span class="citation" data-cites="1G1ccz54w">[<a href="#ref-1G1ccz54w" role="doc-biblioref">47</a>]</span> and in some cases, fragments only have one or two low energy conformers so it is not clear how accurate the distances measured are.
 In addition, only comparing low energy conformers do not fully capture torsion energy barriers which we also want to ensure remain accurate relative to their parent’s torsion energy scan.</p>
-<p>To mitigate the these issues when validating our scheme, we generated higher energy conformers by driving the torsions and added those WBOs to the distributions.
+<p>To mitigate these issues when validating our scheme, we generated higher energy conformers by driving the torsions and added those WBOs to the distributions.
 Furthermore, since we know that WBOs from structures in a QC torsion scan are anti correlated with the QC torsion energy scan <span class="citation" data-cites="kk1Ge7kP">[<a href="#ref-kk1Ge7kP" role="doc-biblioref">33</a>]</span>, adding WBOs from higher energy conformers to the distributions provided a better validation of our method than examining only the distance between WBOs from low energy omega-generated conformers.
 The differences in distances of these distributions from fragments generated with our scheme and <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">31</a>]</span> is shown in Figure <a href="#fig:difference_hist">8</a>.</p>
-<p>For many molecules, using a common sense rule based approach, such as the one used in <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">31</a>]</span> to fragmenting molecules, will yield fragments that are the same fragments generated with our scheme shown in green in Figure <a href="#fig:difference_hist">8</a>, and sometimes can even perform slightly better than using the WBO as an indicator (Figure <a href="#fig:difference_hist">8</a>, red).
+<p>For many molecules, using a common sense rule based approach, such as the one used in <span class="citation" data-cites="XP23v9gZ">[<a href="#ref-XP23v9gZ" role="doc-biblioref">31</a>]</span> to fragmenting molecules, will yield the same fragments our scheme generated.
+The equally good fragments are shown in green in Figure <a href="#fig:difference_hist">8</a>.
+Sometimes a simple approach can even perform slightly better than using the WBO as an indicator (Figure <a href="#fig:difference_hist">8</a>, red).
 However, in some cases, especially if certain chemical groups are involved, using the WBO as an indicator significantly improves the electron population overlap about the bonds and brings them closer to their parent’s chemical environment (Figure <a href="#fig:difference_hist">8</a>, blue).
 It is important to note that when the fragment generated from both scheme are the same (green in Figure <a href="#fig:difference_hist">8</a>), they are not necessarily the optimal fragment and both schemes can perform equally poorly (SI Figure <a href="#fig:equal-fragments">17</a>, A, B, and C).
 However, in most cases both fragments do perform well (SI Figure <a href="#fig:equal-fragments">17</a>, D, E, and F).</p>
@@ -692,8 +694,7 @@ Changes are consistent across the validation set.
 Since the parent molecule in <strong>[G]</strong> has several rotatable bonds, there are many tick marks in its rug plot.</figcaption>
 </figure>
 </div>
-<p>Upon closer inspection of the validation set, we found eight chemical groups that induce long range effects to sensitive bonds shown in
-Figure <a href="#fig:chemical_groups">9</a>.
+<p>Upon closer inspection of the validation set, we found eight chemical groups that induce long range effects to sensitive bonds.
 These chemical groups with representative examples are shown in Figure <a href="#fig:chemical_groups">9</a>.
 The groups are ordered by how strongly they induce long range effect, in decreasing order. The most dramatic change happens when a phosphate group is removed (Figure <a href="#fig:chemical_groups">9</a>, A).
 The variance of the WBO distribution increases which conveys an increase in relative energies of conformers in the QC torsion scans.
@@ -772,7 +773,7 @@ This simple addition improves the quality of the resulting fragments, specifical
 We generated a validation set using exhaustive fragmentation to benchmark fragmentation schemes and found that a threshold of 0.03 will find the most fragments that minimize both fragment size and distance to the parent’s conformation distribution about the bond.
 We also found eight chemical groups that have long-range effects on sensitive bonds and their inclusion is necessary to recapitulate a parent’s chemical environment even if they are 3-6 bonds away from the central bond.</p>
 <p>Overall, we believe the approach presented here provides a good general approach to fragment molecules for QC data generation to assist in parametrization of general force fields.
-Its approach on our test set seems superior to that of straightforward alternatives.
+On our test set, this approach seems superior to that of straightforward alternatives.
 The method is currently available as an open source Python library <span class="citation" data-cites="CxKjna86">[<a href="#ref-CxKjna86" role="doc-biblioref">51</a>]</span>.
 We plan ot apply this approach broadly within the OpenFF Initiative and incorporate this functionality in the open force field toolkit <span class="citation" data-cites="ggfhCq68">[<a href="#ref-ggfhCq68" role="doc-biblioref">52</a>]</span>
 In the future, this approach can be made more efficient by using machine learning methods to learn the chemical patterns that should not be fragmented using the dataset shared here.</p>
